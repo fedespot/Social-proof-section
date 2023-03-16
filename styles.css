@@ -1,0 +1,196 @@
+/* # Front-end Style Guide
+## Layout
+The designs were created to the following widths:
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+### Primary
+Very Dark Magenta: hsl(300, 43%, 22%)
+Soft Pink: hsl(333, 80%, 67%)
+
+### Neutral
+Dark Grayish Magenta: hsl(303, 10%, 53%)
+Light Grayish Magenta: hsl(300, 24%, 96%)
+White: hsl(0, 0%, 100%)
+
+### Body Copy
+- Font size: 15px
+
+### Font
+- Family: [League Spartan](https://fonts.google.com/specimen/League+Spartan)
+- Weights: 400, 500, 700 */
+
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 15px;
+    font-family: League Spartan;
+    background: url(images/bg-pattern-top-desktop.svg) no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.2;
+}
+
+.container{
+    max-width: 1024px;
+    margin-bottom: 2em;
+    
+}
+
+.top-space{
+    display: flex;
+    gap: 6em;
+    margin-bottom: 3em;
+}
+
+.main-info{
+    width: 40%;
+}
+
+.main-info h1{
+    font-size: 3rem;
+    color: hsl(300, 43%, 22%);
+    margin-bottom: 0.5em;
+}
+
+.main-info__text{
+    width: 90%;
+    color: hsl(303, 10%, 53%);
+    
+}
+
+.rating{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.rate{
+    display: flex;
+    width: 75%;
+    background: hsl(300, 24%, 96%);
+    margin-bottom: 1.2em;
+    border-radius: 0.5em;
+    gap: 0.5em;
+    padding: 1.2em 2em 1.2em 1.5em;
+}
+
+.star{
+    width: 1em;
+    object-fit: contain;
+}
+
+.rating__text{
+    margin-left: 1em;
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+}
+
+.rate-2{
+    align-self: center;
+}
+
+.rate-3{
+    align-self: flex-end;
+}
+
+.testimonies{
+    display: flex;
+    gap: 1.5em;
+    height: 250px;
+}
+
+.card{
+    background: hsl(300, 43%, 22%);
+    border-radius: 0.5em;
+    color: hsl(0, 0%, 100%);
+    padding: 2em;
+    
+}
+
+.testimony-1{
+    align-self: flex-start;
+}
+
+.testimony-2{
+    align-self: center;
+}
+
+.testimony-3{
+    align-self: flex-end;
+}
+
+.row{
+    display: flex;
+    padding-bottom: 1.3em;
+    gap: 1.5em;
+}
+
+.card-wrap {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.6rem;
+    justify-content: center;
+}
+
+.avatar{
+    border-radius: 50%;
+    width: 15%;
+}
+
+.testimony__verified{
+    color:hsl(333, 80%, 67%);
+    font-weight: 400;
+}
+
+.testimony__text{
+   font-weight: 500;
+    width: 98%;
+}
+
+
+
+@media (max-width: 700px){
+
+    .container{
+        padding: 2em;
+    }
+    .top-space{
+        padding-top: 20%;
+        flex-direction: column;
+        text-align: center;
+        gap: 2em;
+    }
+    .main-info{
+        width: 100%;
+    }
+
+    .main-info__text{
+        width: 100%;
+    }
+    .rating{
+        width: 100%;
+    }
+    .rate{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .testimonies{
+        flex-direction: column;
+    }
+    footer{
+        display: none;
+    }
+}
