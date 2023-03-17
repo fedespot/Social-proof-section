@@ -33,7 +33,7 @@ body{
     font-size: 15px;
     font-family: League Spartan;
     background: url(images/bg-pattern-top-desktop.svg) no-repeat;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -61,6 +61,7 @@ body{
     font-size: 3rem;
     color: hsl(300, 43%, 22%);
     margin-bottom: 0.5em;
+    font-weight: 700;
 }
 
 .main-info__text{
